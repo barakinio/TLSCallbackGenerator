@@ -41,4 +41,4 @@ I encourage you to read more on the subject as it can be used in conjunction wit
 
 
   ## Credits
-  * Real thanks for [YoavShah] (https://github.com/JustasMasiulis/lazy_importer/) for creating this project with me 
+  * Real thanks for [YoavShah](https://github.com/yoavshah) for creating this project with me 
