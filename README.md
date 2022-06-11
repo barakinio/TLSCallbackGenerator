@@ -22,7 +22,10 @@ I encourage you to read more on the subject as it can be used in conjunction wit
   ```
   note that you can also add secret TLSCallback from within secret TLSCallbacks! just make sure that the indexes make sense since a Callback will not execute if it's not connected to the rest of the array.
   
-  And That's it! your code will run before main. If you're struggling with implemntation, check out example.cpp to see how to use both functions.
+  And That's it! your code will run before main. If you're struggling with implementation, check out example.cpp to see how to use both functions.
+
+## Further Functionality
+We've also added the option to remove your callbacks from the array. Use the "REMOVE_SECRET_TLS_CALLBACK_BY_INDEX" Macro to do so.
 
   ## Pics
   These are all taken from an executable which uses both regular and a dynamic TLSCallback, but they apply to both cases.
