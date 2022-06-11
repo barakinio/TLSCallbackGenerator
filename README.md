@@ -21,23 +21,24 @@ I encourage you to read more on the subject as it can be used in conjunction wit
   }
   ```
   note that you can also add secret TLSCallback from within secret TLSCallbacks! just make sure that the indexes make sense since a Callback will not execute if it's not connected to the rest of the array.
+  
+  And That's it! your code will run before main. If you're struggling with implemntation, check out example.cpp to see how to use both functions.
 
-  ## Examples
+  ## Pics
+  These are all taken from an executable which uses both regular and a dynamic TLSCallback, but they apply to both cases.
+  
+  * PeStudio finds the Static TLSCallback, since it's written in the PE structure of the executable. However, it won't see any dynamic TLSCallback that's present (duh!)
+<img align="center" src="https://raw.githubusercontent.com/barakinio/TLSCallbackGenerator/master/images/PeStudio.png" />
 
-  * Example of CPP syntax
-<img align="center" src="https://raw.githubusercontent.com/yoavshah/ImportlessApi/master/images/CPP_Syntax.png" />
+  * We can also see the first callback in the exports section, but c'est tout.
+<img align="center" src="https://raw.githubusercontent.com/barakinio/TLSCallbackGenerator/master/images/exports.png" />
 
-  * Example of CPP full example
-<img align="center" src="https://raw.githubusercontent.com/yoavshah/ImportlessApi/master/images/CPP_Example.png" />
+  * This is how our main will look like. No TLS in sight!
+<img align="center" src="https://raw.githubusercontent.com/barakinio/TLSCallbackGenerator/master/images/main.png" />
 
-  * Example's output
-<img align="center" src="https://raw.githubusercontent.com/yoavshah/ImportlessApi/master/images/OUTPUT_Example.png" />
+  * This is how the regular callback looks like. You can see the definition of the dynamic callback (further obfuscation is left as an exercise for the reader). However you won't see any call to it.
+<img align="center" src="https://raw.githubusercontent.com/barakinio/TLSCallbackGenerator/master/images/Initial%20callback.png" />
 
-  * IDA output (main function)
-<img align="center" src="https://raw.githubusercontent.com/yoavshah/ImportlessApi/master/images/IDA_Example_1.png" />
-
-  * IDA output (resolve function)
-<img align="center" src="https://raw.githubusercontent.com/yoavshah/ImportlessApi/master/images/IDA_Example_2.png" />
 
 
   ## Credits
