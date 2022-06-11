@@ -45,4 +45,4 @@ We've also added the option to remove your callbacks from the array. Use the "RE
 
 
   ## Credits
-  * Real thanks for [YoavShah](https://github.com/yoavshah) for creating this project with me 
+  * Real thanks for [YoavShah](https://github.com/yoavshah) for creating this project with me!
